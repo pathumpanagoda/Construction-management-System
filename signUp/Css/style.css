@@ -1,0 +1,176 @@
+body{
+	font-family: Corbel Light;
+	margin: 0;
+}
+
+img{
+	position: absolute;
+	background: cover;
+	
+}
+.sideimg img{
+	width: 800px;
+	height: 800px;
+}
+
+.hed{
+	position: relative;
+	height: 100px;
+}
+.hed img{
+	position: absolute;
+	width: 150px;
+	height: 75px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+h1{
+	text-align: center; 
+	font-weight: normal; 
+	font-size: 50px; 
+	margin-top: 0px; 
+	margin-bottom: 10px;
+	color: white;
+}
+h4{
+	
+}
+
+h5{
+	text-align: center; 
+	margin-top: 0px;
+	color: white;
+	font-size: 15px;
+}
+
+.signup-box{
+	position: relative;
+	width: 400px;
+	height: 740px;
+	margin:auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding-top: 30px;
+	padding-left: 10px;
+	border: 1px solid #AEB6BF;
+	box-shadow: 0 0 1px 0 lightgray;
+	border-radius: 10px;
+	transition: all 1s ease;
+	backdrop-filter: blur(15px);
+
+
+}
+.signup-box h2{
+	text-align: center;
+	padding-bottom: 25px;
+	color: white;
+}
+
+form{
+	width: 350px;
+	margin-left: 25px;s
+	margin-top: 40px;
+}
+
+form input{
+	size: 40%;
+	padding: 10px;
+	padding-left: 15px;
+	border: none;
+	border: 1px solid #AEB6BF;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-blend-mode: normal;
+	outline: none;
+	font-size: 15px;
+}
+
+::placeholder{
+	color: black;
+	font-family: calibri;
+	font-size: 1rem;
+}
+
+.allinput{
+	width: 310px;
+	transform: all 2s ease;
+}
+
+form input[name="fname"]{
+	width: 135px;
+	margin-right: 5px;
+}
+
+form input[name="lname"]{
+	width: 135px;
+	margin-right: 5px;
+}
+
+
+input[type="submit"]{
+	padding-top: 10px;
+	width: 340px;
+	height: 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	background-color: #CFA31A;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	transition-duration: 0.1s;
+}
+
+form input[class="allinput"]:hover{
+	border: 1px solid lightblue;
+	border-inline: 1px solid cyan;
+	background-color: #F8FCFF ;
+	
+
+
+}
+
+form input[type="submit"]:hover{
+	border: 1px solid lightblue;
+	border-inline: 1px solid cyan;
+	background-color: #39AFF3;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	transform: scale(1.0);
+	transition-duration: 0.1s;
+}
+
+
+.agree-label,a{
+	color: black;
+}
+
+.or{
+	position: sticky;
+	width: 30px;
+	height: 30px;
+	border: none;
+	color: white;
+	padding:5px;
+	margin-top: 0px;
+	margin-left: 150px;
+	font-size: 19px;
+	overflow: hidden;
+
+}
+
+
+i{
+	font-size: 30px;
+	margin-right: 15px;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-top: ;
+	cursor: pointer;
+	color: #f1c31e;
+}
+
+i:hover{
+	color: #39AFF3;
+}

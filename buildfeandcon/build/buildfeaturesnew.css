@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; 
+}
+.background_image{
+    background: url("cons.jpg");
+    background-size: cover;
+}
+
+
+.header{
+  height: 15%;
+  width: 100%;
+  top: 0%;
+  padding: 0 2%;
+  background: rgba(64,66,88, 0.7);
+  position: absolute;
+}
+
+navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  width: 140px;
+}
+
+.nav-links{
+  padding: 30px 0;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.nav-links li{
+  margin: 0 15px;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  transition: 0.3s ease;
+}
+
+.N:hover{
+  color:rgb(236, 164, 7);
+  box-shadow: 0 2px 0 0 currentColor;
+}
+
+#btn{
+  background: rgb(236, 164, 7);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#btn:hover a:hover{
+  color:#fff;
+  box-shadow: none;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-top: 30px;
+}
+.row h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.75em;
+  margin: 0.9em 0;
+  font-weight: 600;
+  color:#070024;
+  position:relative;
+  top:50%;
+}
+.column {
+  padding: 1em;
+  
+}
+.card {
+  padding: 3.1em 1.25em;
+  text-align: center;
+  background: linear-gradient(0deg, black 10px, transparent 10px);
+  background-repeat: no-repeat;
+  background-position: 0 0.62em;
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card .icon {
+  font-size: 2.5em;
+  height: 2em;
+  width: 2em;
+  margin: auto;
+  background-color: yellow;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: black;
+}
+.icon:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  border: 0.12em solid black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.card h3 {
+  font-size: 1.3em;
+  margin: 1em 0 1.4em 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: white;
+}
+.card p {
+  line-height: 2em;
+  color: black;
+  font-weight: 800;
+}
+.card:hover {
+  background-position: 0;
+}
+.card:hover .icon:before {
+  height: 2.25em;
+  width: 2.25em;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 2em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+nav.active{
+ 	background:black;
+}
+.button {
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background-color:#FBE106;
+}
+

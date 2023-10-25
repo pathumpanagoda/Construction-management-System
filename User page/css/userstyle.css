@@ -1,0 +1,508 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #EDEDED;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.horizontalNavbar{
+    position: fixed;
+    z-index: 1;
+    font-family: Bahnschrift;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+   
+    box-shadow:0 3px 0.25rem rgba(0,0,0,.2);
+
+}
+
+.horizontalNavbar h3{
+	margin-left: 0px;
+
+}
+
+.fa-bell{
+	position: fixed;
+	font-size: 20px;
+	margin-left: 75%;
+	margin-top: 40px;
+	cursor: pointer;
+	color: gray;
+}
+
+.fa-envelope{
+	position: fixed;
+	margin-left: 78%;
+	margin-top: 40px;
+	font-size: 20px;
+	color: gray;
+	cursor: pointer;
+}
+
+#prof-user{
+	position: relative;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-left: 83.5%;
+	margin-bottom: 0px;
+	cursor: pointer;
+	color: rgb(15, 15, 15);
+	padding: 0;
+
+}
+
+
+.horizontalNavbar img{
+	width: 130px;
+	height: 60px;
+	margin-left: 30px;
+	margin-top: 1px;
+	cursor: pointer;
+}
+
+.action{
+	position: absolute;
+	padding: 0px;
+	top: 20px;
+	right: 22px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.action .menu{
+	position: absolute;
+	top: 50px;
+	right: -20px;
+	padding: 0px 10px;
+	background: white;
+	width: 190px;
+	box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+	border-radius: 15px;
+		
+}
+.action.open-menu{
+	visibility: visible;
+	opacity: 1;
+	top: 40px;
+}
+
+.action .menu::before{
+	content: '';
+	position: absolute;
+	top: -5px;
+	right: 28px;
+	width: 20px;
+	height: 20px;
+	background: white;
+	transform: rotate(45deg);
+	padding: 0;
+	margin: 0;
+
+
+}
+
+.action .menu i{
+	color: black; 
+	font-size: 20px;
+	margin-left: 10px;
+	margin-right: 20px;
+
+}
+
+.action .menu h3{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding: 0px;
+	font-weight: 350;
+	margin: 0;
+}
+
+.action .menu p{
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	padding: 0px 0px 10px 0px;
+	margin: 0;
+}
+
+.action .menu ul li{
+	list-style: none;
+	padding: 10px 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+	display: flex;
+	align-items: left;
+	justify-content: left;
+
+}
+
+.action .menu ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-weight: 250;
+	transition: 0.1s;
+}
+
+.action .menu ul li:hover a{
+	color: #9C5100;
+}
+
+
+.DASHBOARD h2{
+	position: absolute;
+	font-family: sans-serif;
+	margin-left: 280px;
+	top: 95px;
+	font-weight: 20;
+
+}
+
+.addProject{
+	position: absolute;
+	top: 90px;
+	left: 84%;
+	padding: 0px;
+	width: 200px;
+	height: 40 px;
+
+}
+
+.addProject button[type="button"]{
+	padding-top: 0px;
+	margin-left: 50px;
+	width: 150px;
+	height: 40px;
+	font-size: 15px;
+	font-family: calibri;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 0 0 10px 0 lightgray;
+
+}
+
+.addProject img{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	margin: 0px;
+
+}
+
+.projectsummary{
+	position: absolute;
+	width: 58%;
+	height: 26%;
+	margin-left: 269px;
+	top: 140px;
+	border: 1px thin gray;
+	border-radius: 15px;
+	font-family: Bahnschrift;
+	background-color:#F5F5F5;
+	padding: 5.5% 2% 1% 2%;
+	box-shadow: 0 0 10px 0 lightgray;
+
+	
+}
+
+.projectsummary > div{
+	transition: all 300ms ease;
+}
+
+.projectsummary img{
+	position: absolute;
+	width: 20%;
+	height: 25%;
+	margin: 20px 0px 0px 20px;
+
+}
+
+.projectsummary h1{
+	font-family: sans-serif;
+	margin-top: 70px;
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 0;
+	color: white;
+}
+
+.projectsummary p{
+	margin-left: 25px;
+	margin-top: 0px;
+	color: white;
+}
+
+.topic-bar{
+	width: 100%;
+	height: 12%;
+	background-color: #639cd9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	color: black;
+	font-family: sans-serif;
+	font-size: 17px;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.inprogress{
+	position: absolute;
+	width: 28%;
+	height: 62%;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #769353;
+	margin-bottom: 0px;
+
+	
+}
+
+
+.projectsummary.inprogress h1{
+	font-size: 50px;
+}
+
+.inprogress:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+	
+}
+
+.compleated{
+	position: absolute;
+	width: 28%;
+	height: 62%;
+	margin-left: 33%;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #3d655d;
+	margin-bottom: 0px;
+}
+
+.compleated:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.notstarted{
+	position: absolute;
+	width: 28%;
+	height: 62%;
+	margin-left: 66%;
+	margin-bottom: 0px;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	background-color: #33484d;
+}
+
+.notstarted:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.todayis{
+	position: absolute;
+	top: 134px;
+	left: 84.6%;
+	padding: 0px;
+	width: 200px;
+	height: 200px;
+}
+.todayis img{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	padding: 0;
+	z-index: -1;
+}
+
+.todayis h2{
+	position: relative;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.todayis input[type="date"]{
+	position: absolute;
+	padding: 8px;
+	transform: translate(-50%,-50%);
+	font-size: 18px;
+	border-radius: 10px;
+	margin-left: 100px;
+	margin-top: 30px;
+	border: none;
+
+}
+
+.box{
+	font-family: sans-serif;
+	left: 84.8%;
+	top: 355px;
+	position: absolute;
+	width: 195px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0 0 10px 0 lightgray;
+	border-radius: 15px;
+	padding: 0px;
+}
+
+.box .percent{
+	position: relative;
+	width: 110px;
+	height: 110px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.box .percent svg{
+	position: relative;
+	width: 110px;
+	height: 110px;
+}
+
+.box .percent svg circle{
+	width: 120px;
+	height: 120px;
+	fill: none;
+	stroke-width: 10;
+	stroke: #000;
+	transform: translate(5px,5px);
+	stroke-dasharray: 320;
+	stroke-dashoffset: 320;
+	stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1){
+	stroke-dashoffset: 0;
+	stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2){
+	stroke-dashoffset: calc(320 - (320 * 87) / 100);
+	stroke: #F5A11C;
+}
+
+.box .percent .number{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+}
+
+.sidebar{
+	position: absolute;
+	font-family: Bahnschrift;
+	width: 240px;
+	height:750px;
+	background-color: white;
+	top: 80px;
+	padding-top: 60px;
+	border: none;
+	border-top-right-radius: 15px;
+	box-shadow: 0 0 10px 0 lightgray;
+
+}
+
+.sidebar ul li :hover{
+	background-color: #E3B830;
+	color: white;
+
+}
+
+.sidebar ul li.active{
+	background: #E3B830;
+	color: white;
+
+}
+
+.sidebar ul li a i{
+	color: black;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.sidebar img{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	margin-top: -45px;
+	margin-left: 65px;			
+}
+
+.sidebar h3{
+	margin-bottom: -10px;
+	text-align: center;
+}
+
+.sidebar p{
+	margin-bottom: 30px;
+	margin-top: 12px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.sidebar hr{
+	position: relative;
+	color: red;
+	margin-top: -5px;
+}
+
+.sidebar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0px;
+	width: 240px;
+}
+
+.sidebar li a{
+	display: block;
+	color: #000;
+	padding: 15px 40px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+
+
+.sidebar button[name="logout"]{
+	margin-top: 50px;
+	margin-left: 60px;
+ 
+}
+
+.sidebar button:onclick[name="logout"]{
+	margin-top: 50px;
+	margin-left: 60px;
+}
+
+.chart{
+	position: absolute;
+	width: 60.5%;
+	height: 50%;
+	margin-top: 32.5%;
+	margin-left: 270px;s
+	padding: 40px 10px 10px 10px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 10px 0 lightgray;
+}
